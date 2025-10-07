@@ -1,0 +1,109 @@
+<!-- 修改后的index.html结构 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>明日方舟关卡挑战随机工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 标题与作者链接区 -->
+    <header class="title-section">
+        <h1>明日方舟 随机挑战生成器</h1>
+        <a href="https://space.bilibili.com/94043184" target="_blank">作者主页</a>
+    </header>
+
+    <!-- 角色与干员模块合并区域 -->
+    <div class="combined-character-section">
+        <!-- 角色限制模块 -->
+        <div class="module-section">
+            <h3>干员限制随机</h3>
+            <div class="role-limit-controls">
+                <button id="random-role-btn">生成随机干员限制</button>
+                <div class="role-limit-result" id="role-limit-text">未生成干员限制</div>
+            </div>
+        </div>
+
+        <hr class="module-divider">
+        
+        <!-- 血狼破军合约榜干员抽取模块 -->
+        <div class="module-section">
+            <h3>血狼破军合约榜 - 干员随机抽取</h3>
+            <div class="bloodwolf-controls">
+                <button id="random-bloodwolf-btn">随机抽取12位干员</button>
+                <div class="bloodwolf-result" id="bloodwolf-result">
+                    <p>点击上方按钮抽取12位干员</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关卡相关模块合并区域 -->
+    <div class="combined-level-section">
+        <!-- 关卡范围选择模块 -->
+        <div class="module-section">
+            <h3>关卡范围选择</h3>
+            <div class="level-range">
+                <!-- 关卡复选框内容保持不变 -->
+                <input type="checkbox" name="levelRange" id="range-main" value="main">
+                <label for="range-main"><span>主线</span></label>
+                
+                <input type="checkbox" name="levelRange" id="range-mainRaid" value="mainRaid">
+                <label for="range-mainRaid"><span>主线突袭</span></label>
+                
+                <!-- 其他关卡选项保持不变 -->
+                <input type="checkbox" name="levelRange" id="range-mainH" value="mainH">
+                <label for="range-mainH"><span>主线H关</span></label>
+                
+                <input type="checkbox" name="levelRange" id="range-event" value="event">
+                <label for="range-event"><span>活动</span></label>
+                
+                <input type="checkbox" name="levelRange" id="range-eventEX" value="eventEX">
+                <label for="range-eventEX"><span>活动EX</span></label>
+                
+                <input type="checkbox" name="levelRange" id="range-eventEXRaid" value="eventEXRaid">
+                <label for="range-eventEXRaid"><span>活动EX突袭</span></label>
+                
+                <input type="checkbox" name="levelRange" id="range-eventS" value="eventS">
+                <label for="range-eventS"><span>活动S</span></label>
+                
+                <input type="checkbox" name="levelRange" id="range-eventSRaid" value="eventSRaid">
+                <label for="range-eventSRaid"><span>活动S突袭</span></label>
+                
+                <input type="checkbox" name="levelRange" id="range-boss" value="boss">
+                <label for="range-boss"><span>BOSS关</span></label>
+            </div>
+        </div>
+
+        <hr class="module-divider">
+
+        <!-- 关卡抽取模块 -->
+        <div class="module-section">
+            <h3>关卡抽取</h3>
+            <button id="single-draw-btn">单次关卡抽取</button>
+            <button id="ten-draw-btn">十连关卡抽取</button>
+        </div>
+
+        <hr class="module-divider">
+
+        <!-- 结果区域 -->
+        <div class="module-section">
+            <h3>抽取结果</h3>
+            <div id="draw-result" style="display: none;">
+                <h4 id="result-title"></h4>
+                <div id="result-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 历史记录区域保持独立 -->
+    <div class="history">
+        <h3>最近5条历史记录</h3>
+        <div id="history-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
