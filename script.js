@@ -118,13 +118,13 @@ const BLOODWOLF_OPERATORS = [
     { id: 97, name: "陈", img: "operators/97-陈.jpg" },
     { id: 98, name: "菲亚梅塔", img: "operators/98-菲亚梅塔.jpg" },
     { id: 99, name: "棘刺", img: "operators/99-棘刺.jpg" },
-    { id: 100, name: "琳琅诗怀雅", img: "operators2/100-琳琅诗怀雅.jpg" },
-    { id: 101, name: "老鲤", img: "operators2/101-老鲤.jpg" },
-    { id: 102, name: "异客", img: "operators2/102-异客.jpg" },
-    { id: 103, name: "帕拉斯", img: "operators2/103-帕拉斯.jpg" },
-    { id: 104, name: "W", img: "operators2/104-W.jpg" },
-    { id: 105, name: "远牙", img: "operators2/105-远牙.jpg" },
-    { id: 106, name: "伺夜", img: "operators2/106-伺夜.jpg" }
+    { id: 100, name: "琳琅诗怀雅", img: "operators/100-琳琅诗怀雅.jpg" },
+    { id: 101, name: "老鲤", img: "operators/101-老鲤.jpg" },
+    { id: 102, name: "异客", img: "operators/102-异客.jpg" },
+    { id: 103, name: "帕拉斯", img: "operators/103-帕拉斯.jpg" },
+    { id: 104, name: "W", img: "operators/104-W.jpg" },
+    { id: 105, name: "远牙", img: "operators/105-远牙.jpg" },
+    { id: 106, name: "伺夜", img: "operators/106-伺夜.jpg" }
 
 ];
 
@@ -648,3 +648,4 @@ bloodwolfResult.innerHTML = `
     });
 
 }
+
